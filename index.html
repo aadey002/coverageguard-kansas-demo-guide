@@ -128,7 +128,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
     <div class="card-body" style="font-size:12.5px;color:#3C3C3C;line-height:1.8;">
       This guide covers all three deployed Kansas parts in one executive walkthrough:
       <br><br>
-      <span class="tag tag-p1">Part 1</span> <strong>CertCore</strong> — Recertification lifecycle · H.R.1 work engagement · Clinician exemption review · KanCare routing<br>
+      <span class="tag tag-p1">Part 1</span> <strong>CertCore</strong> — Annual review / recertification lifecycle · coverage reconciliation · special-program routing<br>
       <span class="tag tag-p2">Part 2</span> <strong>Coverage Intelligence</strong> — Six-source reconciliation · KHIN / KONZA Health · COV-KS codes · Revenue at risk<br>
       <span class="tag tag-p4">Part 4</span> <strong>Submission Gateway</strong> — Nine-layer submission workbench · KanCare Portal assister portal · State response tracking
     </div>
@@ -296,7 +296,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
     <div class="card-body" style="font-size:12.5px;line-height:1.8;">
       <div style="margin-bottom:12px;">
         <strong>Maria Santos</strong> <span class="patient-mrn">MRN560001</span> <span style="font-size:10px;background:#F5F3FF;color:#7C3AED;padding:2px 7px;border-radius:5px;font-weight:700;">KanCare Portal routing</span><br>
-        Wichita, KS 67202 &middot; annual review due Nov 15 2026 &middot; KanCare member &middot; KC-6100 on file &middot; Not subject to H.R.1 community engagement<br>
+        Wichita, KS 67202 &middot; annual review due Nov 15 2026 &middot; KanCare member &middot; KC-6100 on file &middot; annual review cycle active<br>
         <em style="font-size:11px;color:#7C3AED;">Use for: KanCare Portal routing tag &middot; KC-6100 &middot; annual review workflow</em>
       </div>
       <div style="margin-bottom:12px;">
@@ -470,7 +470,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
       <div class="say-block"><div class="say-lbl">SAY</div>"Nine layers. State Profile, Submission Authority, Evidence Requirements, Evidence Package, Route Selected, Submission Handoff, Proof Captured, State Response Tracking, Audit. Layer 4 shows the route selected as <strong>L1 — Human-assisted KanCare portal</strong>. No public API available. Sun River is not batch-authorized. The platform knows that and routes accordingly."</div>
       <div class="do-block"><div class="do-lbl">DO</div>Show the <strong>State Response Simulator</strong>. Select More Information Needed.</div>
       <div class="say-block"><div class="say-lbl">SAY</div>"When the state responds, the case routes back to Part 1 automatically. More Information Needed goes to Rework Queue. Approved goes to Closed. True Denial goes to Post-Denial Follow-Up with an appeal window and a 340B referral pathway. Every state response routes to a defined next queue. The case stays in the system."</div>
-      <div class="diff-block"><div class="diff-lbl">&#9658; Differentiator</div><div class="diff-txt">End-to-end lifecycle: CertCore → Work Engagement → Recertification → Part 4 Gateway → State → back to CertCore. One operating system. One governed workflow across the lifecycle, with automation where authorized and human action where required.</div></div>
+      <div class="diff-block"><div class="diff-lbl">&#9658; Differentiator</div><div class="diff-txt">End-to-end lifecycle: Coverage Intelligence → Annual Review / Recertification → Submission Gateway → State → back to CertCore → Coverage Reconciliation. One operating system. One governed workflow across the lifecycle, with automation where authorized and human action where required.</div></div>
     </div>
   </div>
 
@@ -514,7 +514,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
 <div id="sec-whynow" class="section">
   <div><div class="page-title">Why Start Now</div><div class="page-sub">Not January 1, 2027 — use this after the demo to close on urgency</div></div>
 
-  <div class="crit">&#9888; The patients who will lapse on January 1 have renewals due right now. By the time the H.R.1 deadline arrives, the window to act on at-risk patients has already closed.</div>
+  <div class="crit">&#9888; The patients who will lapse on January 1 have renewals due right now. By the time the renewal deadline arrives, the window to act on at-risk patients has already closed.</div>
 
   <div class="card">
     <div class="card-hdr"><div class="card-hdr-title">Your 90-day renewal pipeline — action required today</div></div>
@@ -617,7 +617,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
 
         <div style="margin-bottom:10px;">
           <label style="display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#0D9488;margin-bottom:4px;">% dual eligible patients</label>
-          <div style="font-size:10px;color:#7C3AED;margin-bottom:3px;">Varies by state &mdash; dual eligible are auto-exempt from H.R.1</div>
+          <div style="font-size:10px;color:#7C3AED;margin-bottom:3px;">Varies by state &mdash; dual eligible have distinct renewal pathways</div>
           <input type="number" id="r_dual" value="18" oninput="calcROI()" class="roi-input"/>
         </div>
 
@@ -628,8 +628,8 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
         </div>
 
         <div style="margin-bottom:10px;">
-          <label style="display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#0D9488;margin-bottom:4px;">% H.R.1 work-req subjects</label>
-          <div style="font-size:10px;color:#7C3AED;margin-bottom:3px;">Of expansion adults &mdash; KS est. 35% of expansion panel</div>
+          <label style="display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#0D9488;margin-bottom:4px;">% annual-review population</label>
+          <div style="font-size:10px;color:#7C3AED;margin-bottom:3px;">KS est. annual review volume</div>
           <input type="number" id="r_subj" value="35" oninput="calcROI()" class="roi-input"/>
         </div>
 
@@ -671,7 +671,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
             <span style="font-size:16px;font-weight:800;color:#15803D;" id="o_340b">—</span>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid #E8D0D4;">
-            <span style="font-size:12px;color:#0D9488;">H.R.1 subjects (patients)</span>
+            <span style="font-size:12px;color:#0D9488;">patients with renewal/documentation risk</span>
             <span style="font-size:16px;font-weight:800;color:#7C3AED;" id="o_hr1">—</span>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid #E8D0D4;">
@@ -753,12 +753,12 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
           <tr style="border-bottom:1px solid #E8D0D4;background:#FAFAFA;">
             <td style="padding:8px 14px;font-weight:600;">18% dual eligible (NYC)</td>
             <td style="padding:8px 14px;color:#0D9488;font-weight:600;">PUBLISHED BENCHMARK<br><span style="font-weight:400;color:#7C3AED;">CMS Medicare-Medicaid Enrollment 2024</span></td>
-            <td style="padding:8px 14px;color:#3C3C3C;">Dual eligible rates vary by state. Dual eligible patients are auto-exempt from H.R.1 work requirements and should be excluded from the H.R.1 subject calculation.</td>
+            <td style="padding:8px 14px;color:#3C3C3C;">Dual eligible rates vary by state. Dual eligible patients have distinct renewal pathways and should be segmented separately in the annual-review calculation.</td>
           </tr>
           <tr style="border-bottom:1px solid #E8D0D4;">
-            <td style="padding:8px 14px;font-weight:600;">35% H.R.1 subjects</td>
-            <td style="padding:8px 14px;color:#0D9488;font-weight:600;">PUBLISHED BENCHMARK<br><span style="font-weight:400;color:#7C3AED;">CMS / Kansas Department of Health and Environment (KDHE) H.R.1 projections 2026 &mdash; EP applicability provisional</span></td>
-            <td style="padding:8px 14px;color:#3C3C3C;">Estimated share of expansion adults (19&ndash;64, non-pregnant, non-disabled) subject to work requirement documentation. Excludes auto-exempt populations. EP applicability provisional.</td>
+            <td style="padding:8px 14px;font-weight:600;">35% annual-review population</td>
+            <td style="padding:8px 14px;color:#0D9488;font-weight:600;">PUBLISHED BENCHMARK<br><span style="font-weight:400;color:#7C3AED;">KDHE annual review volume estimate &mdash; provisional</span></td>
+            <td style="padding:8px 14px;color:#3C3C3C;">Estimated share of Medicaid members requiring annual review documentation. Provisional estimate based on KDHE renewal volume data.</td>
           </tr>
           <tr style="background:#FAFAFA;">
             <td style="padding:8px 14px;font-weight:600;">All figures illustrative</td>
@@ -792,7 +792,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
       <strong>Oct–Nov 2026</strong> — eCW SFTP + FHIR R4 connection · Azure environment setup<br>
       <strong>Nov 2026</strong> — Azure migration · Microsoft BAA covers full stack<br>
       <strong>Dec 2026</strong> — Pilot live on real Sun River data · navigator training<br>
-      <strong>Jan 1, 2027</strong> — H.R.1 effective · platform managing first renewal cycle<br>
+      <strong>Jan 1, 2027</strong> — platform managing first renewal cycle<br>
       <strong>Jun 30, 2027</strong> — Nonprovisional patent filing deadline
     </div>
   </div>
@@ -982,7 +982,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
           <div style="font-size:11px;font-weight:800;color:#7C3AED;margin-bottom:4px;">KanCare Portal</div>
           <div style="font-size:11px;font-weight:700;color:#1A0A0E;">ACCESS KanCare Portal</div>
           <div style="font-size:10.5px;color:#3C3C3C;margin-top:3px;">Kansas ZIP codes &middot; Wichita, KS</div>
-          <div style="font-size:10px;color:#7C3AED;margin-top:4px;">L0&ndash;L1 depending on assister credentials</div>
+          <div style="font-size:10px;color:#7C3AED;margin-top:4px;">L1 depending on assister credentials</div>
         </div>
         <div style="background:#F0FDFA;border:1px solid #0D948844;border-radius:8px;padding:10px 12px;">
           <div style="font-size:11px;font-weight:800;color:#0D9488;margin-bottom:4px;">KANCARE PORTAL</div>
@@ -994,7 +994,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
           <div style="font-size:11px;font-weight:800;color:#D97706;margin-bottom:4px;">KanCare Portal</div>
           <div style="font-size:11px;font-weight:700;color:#1A0A0E;">County KanCare Portal Offices</div>
           <div style="font-size:10.5px;color:#3C3C3C;margin-top:3px;">Rural Kansas counties &middot; Walk-in &middot; Paper/mail fallback</div>
-          <div style="font-size:10px;color:#D97706;margin-top:4px;">L0 Manual &mdash; fallback route</div>
+          <div style="font-size:10px;color:#D97706;margin-top:4px;">L1 — Human-assisted Medical Consumer Self-Service Portal / organizational submitter pathway</div>
         </div>
       </div>
       <div style="font-size:11.5px;color:#3C3C3C;line-height:1.7;">
@@ -1028,9 +1028,9 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
           <div style="margin-left:auto;font-size:10px;font-weight:700;color:#D97706;background:#FFFBEB;padding:2px 8px;border-radius:5px;">FALLBACK</div>
         </div>
         <div style="display:flex;align-items:center;gap:10px;opacity:.45;">
-          <div style="width:28px;height:28px;border-radius:50%;background:#64748B;color:#fff;display:grid;place-items:center;font-size:11px;font-weight:800;flex-shrink:0;">L0</div>
-          <div><div style="font-size:12px;font-weight:700;">Manual / Paper / KanCare Portal Walk-in</div><div style="font-size:11px;">Paper mail, fax, or in-person KanCare Portal &mdash; last resort for paper/mail cases</div></div>
-          <div style="margin-left:auto;font-size:10px;font-weight:700;color:#64748B;background:#F1F5F9;padding:2px 8px;border-radius:5px;">MANUAL</div>
+          <div style="width:28px;height:28px;border-radius:50%;background:#64748B;color:#fff;display:grid;place-items:center;font-size:11px;font-weight:800;flex-shrink:0;">L1</div>
+          <div><div style="font-size:12px;font-weight:700;">Human-assisted Medical Consumer Self-Service Portal / Organizational Submitter</div><div style="font-size:11px;">Portal or organizational submitter pathway &mdash; paper/mail fallback available</div></div>
+          <div style="margin-left:auto;font-size:10px;font-weight:700;color:#64748B;background:#F1F5F9;padding:2px 8px;border-radius:5px;">ASSISTED</div>
         </div>
       </div>
     </div>
@@ -1080,7 +1080,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
             <td style="padding:8px 10px;text-align:center;">KanCare / KDHE</td>
             <td style="padding:8px 10px;text-align:center;color:#B91C1C;font-weight:700;">No</td>
             <td style="padding:8px 10px;text-align:center;color:#D97706;">Verify</td>
-            <td style="padding:8px 10px;text-align:center;"><span style="background:#F1F5F9;color:#64748B;font-weight:700;padding:2px 8px;border-radius:5px;">L0 Manual</span></td>
+            <td style="padding:8px 10px;text-align:center;"><span style="background:#F1F5F9;color:#64748B;font-weight:700;padding:2px 8px;border-radius:5px;">L1 Assisted</span></td>
             <td style="padding:8px 10px;text-align:center;font-weight:700;">0</td>
           </tr>
         </tbody>
@@ -1172,7 +1172,7 @@ function calcROI() {
   var revProt     = revRisk * 0.85; // CG MODELING ASSUMPTION: 85% recovery — replace with pilot data
   var margin340b  = atRisk * b340;
   var hr1subj     = Math.round(total * (1 - dual) * subj);
-  // Assume 2 navigators per 1000 H.R.1 subjects, salary * tsave = savings
+  // Assume 2 navigators per 1000 annual-review patients, salary * tsave = savings
   var navCount    = Math.ceil(hr1subj / 500);
   var navSave     = navCount * salary * tsave;
   var totalImpact = revProt + margin340b + navSave;
