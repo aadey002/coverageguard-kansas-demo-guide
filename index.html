@@ -105,6 +105,7 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
   <button class="sb-btn" onclick="show('gwtech')">&#9638; Gateway technology</button>
   <button class="sb-btn" onclick="show('patientintake')">&#9656; Patient Intake Agent</button>
   <button class="sb-btn" onclick="show('qa')">&#10003; QA checklist</button>
+  <button class="sb-btn" onclick="show('ppdemo')">&#9670; Pain point demo</button>
 
   <div class="sb-footer">
     Confidential · Patent Pending<br>
@@ -1105,6 +1106,196 @@ body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;bac
       </div>
     </div>
 </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- PAIN POINT DEMO -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div id="sec-ppdemo" class="section">
+  <div>
+    <div class="page-title">Pain Point Demo</div>
+    <div class="page-sub">15 steps &middot; 21 pain points covered &middot; NY / MD / OK &middot; Kansas excluded (exemption state, work-requirement pain points do not apply)</div>
+  </div>
+
+  <div class="warn">This script walks Allie&rsquo;s 21 pain points in order of the screens that answer them. No backtracking between modules. Numbers come from the live platform; if they change, update CURRENT_VALUES in the script tag.</div>
+
+  <!-- Step 1 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">1</span> The regulatory clock <span class="step-time">60 sec</span> <span class="tag tag-p1">#1</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Open CertCore Command Center. Point at the H.R.1 banner: live countdown to 31 December 2026, CMS-2454-IFC / 91 FR 33348 cited on screen.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>The first thing Allie raised was ambiguity &mdash; nobody knows which rules apply or when they take effect. This banner is a live countdown. The federal citation is printed on the screen it governs. Effective-dated, versioned rule profiles &mdash; not a memo someone has to find.</div>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">2</span> Who&rsquo;s subject and who&rsquo;s exempt <span class="step-time">60 sec</span> <span class="tag tag-p1">#2</span> <span class="tag tag-p1">#13</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Same screen. Point at the work-requirement subject count and the exemption panel. Show the auto-exempt count against the subject count. Open the Clinician Exemption queue &mdash; the two-element test under 42 CFR 440.315.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Frailty screening and burden reduction. The platform pre-screens every patient and surfaces only the cases that need clinical judgement. Eighteen are auto-exempt; eight are subject. The clinician queue implements the two-element test &mdash; the platform screens but never determines.</div>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">3</span> What&rsquo;s Needed + Renewal Pipeline <span class="step-time">45 sec</span> <span class="tag tag-p1">#11</span> <span class="tag tag-p1">#7</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Scroll to What&rsquo;s Needed: missing documents by type with patient counts. Point at the Renewal Pipeline &mdash; deadlines by window (30d / 60d / 90d).</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Documentation and churn. Evidence resolves by state and pathway into a named checklist &mdash; requested, received, verified. And the pipeline shows which patients are approaching their deadline, not just who has already lapsed.</div>
+    </div>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">4</span> The activity ledger <span class="step-time">90 sec</span> <span class="tag tag-p1">#8</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Community Engagement &rarr; click the &ldquo;At risk&rdquo; tile. Expand an at-risk patient. Walk through the Qualifying Activity ledger: employment, education, training, community service, income pathway, verification status and source document per line.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>The question is not whether a patient is working. It is whether anyone can prove it on the day the state asks. This is his month: thirty-five hours of employment verified against a paystub, against an eighty-hour requirement &mdash; forty-five short, with the deadline twelve days out.</div>
+      <div class="diff-block"><div class="diff-lbl">&#9658; Differentiator</div><div class="diff-txt">The distance between &ldquo;a document is missing&rdquo; and &ldquo;this paystub is four months outside the income window, request a current one&rdquo; is the distance between a task list and an operations platform.</div></div>
+    </div>
+  </div>
+
+  <!-- Step 5 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">5</span> Language and outreach <span class="step-time">30 sec</span> <span class="tag tag-p1">#16</span> <span class="tag tag-p1">#6</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Point at the LANGUAGE column. Click the Spanish filter pill &mdash; the panel narrows. Point at the next-action column and the outreach template label.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Most outreach is a text message everyone gets. This patient&rsquo;s record carries his language, so the outreach goes out in Spanish, and I can filter the whole panel by language to see who needs which version.</div>
+    </div>
+  </div>
+
+  <!-- Step 6 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">6</span> Who does the work <span class="step-time">30 sec</span> <span class="tag tag-p1">#5</span> <span class="tag tag-p1">#17</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Point at the queue badges, the &ldquo;16 agents &middot; human-by-exception&rdquo; footer. Toggle between Navigator and Clinician roles.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Capacity and coordination. The platform routes by exception, not by case. Role-based views mean navigators see their queue and clinicians see theirs &mdash; explicit ownership, not a shared spreadsheet.</div>
+    </div>
+  </div>
+
+  <!-- Step 7 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">7</span> Coverage Intelligence &mdash; what&rsquo;s wrong and why <span class="step-time">45 sec</span> <span class="tag tag-p2">#3</span> <span class="tag tag-p2">#14</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Switch to Coverage Intelligence Command Center. Point at the conflict taxonomy, the source health panel. Open one conflict &mdash; show the classified reason with confidence level.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Attribution and visibility. Every conflict is classified with a reason and a confidence level, not just flagged. And the source health panel shows which data feeds are current and which are stale &mdash; so you know whether the conflict is real or just a lag.</div>
+    </div>
+  </div>
+
+  <!-- Step 8 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">8</span> Pre-visit and revenue <span class="step-time">30 sec</span> <span class="tag tag-p2">#15</span> <span class="tag tag-p2">#21</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Point at the pre-visit coverage view and the claims-at-risk total. Open the pharmacy / 340B queue.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Latency and revenue. This is checked before the visit, not reconciled after. And the revenue exposure is quantified per patient and in aggregate &mdash; finance sees the number before it becomes a denied claim.</div>
+    </div>
+  </div>
+
+  <!-- Step 9 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">9</span> Same patient, different module <span class="step-time">30 sec</span> <span class="tag tag-p2">#4</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Search the golden-path MRN. Same name, same renewal countdown, DEMO tag. Point at the P1 Case ID still attached.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Most tools track a patient inside one system. This is the same MRN in recertification, in coverage intelligence, and in the submission queue &mdash; still carrying the case ID he was created with.</div>
+    </div>
+  </div>
+
+  <!-- Step 10 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">10</span> The revoked case <span class="step-time">45 sec</span> <span class="tag tag-p4">#18</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Switch to Submission Gateway. Open the consent-revoked case (MRN90007). Authority revoked &mdash; submission blocked. Evidence is 100% complete. It does not matter.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Being able to reach a state system is not the same as being allowed to submit on someone&rsquo;s behalf. This case shows consent verified under 42 CFR 435.923. This other one shows consent revoked &mdash; and the platform will not submit it, however complete the evidence package is.</div>
+      <div class="diff-block"><div class="diff-lbl">&#9658; Differentiator</div><div class="diff-txt">Authority is not access. Evidence completeness does not override consent. Two separate gates, enforced independently.</div></div>
+    </div>
+  </div>
+
+  <!-- Step 11 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">11</span> The defective document <span class="step-time">45 sec</span> <span class="tag tag-p4">#12</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Open a quality-blocked case. Evidence 100%, authority verified, <strong>still blocked</strong>. The blocker names the document and the defect: <em>Proof of Income &mdash; Paystub dated 04/2025 &mdash; outside the 60-day income window (CG-P4-004)</em>.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Most eligibility tools tell you a document is missing. This one tells you the paystub is dated April 2025, that it falls outside the sixty-day income window, and it will not let the case be submitted until a current one replaces it.</div>
+      <div class="diff-block"><div class="diff-lbl">&#9658; Differentiator</div><div class="diff-txt">Per-document quality review. Named defect, stated reason, stated action, blocked at submission. The state does not find it first.</div></div>
+    </div>
+  </div>
+
+  <!-- Step 12 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">12</span> The machinery <span class="step-time">30 sec</span> <span class="tag tag-p4">#19</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Return to Command Center. Point at the Pipeline Funnel (11 stages) and Channel Distribution.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Submission is a staged pipeline: state profile, authority, evidence, package, channel selection, receipt. Each stage is governed &mdash; evidence cannot be submitted before authority is validated, and submission is blocked until every document passes quality review.</div>
+    </div>
+  </div>
+
+  <!-- Step 13 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">13</span> What came back <span class="step-time">30 sec</span> <span class="tag tag-p4">#20</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Open the Response Summary, then the Rework and Post-Denial queues. Show the different handling for each response type.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Closure. Responses are captured and normalised into six canonical outcomes, and each routes to its own queue. More Information Needed goes back to CertCore for rework. True Eligibility Denial goes to post-denial follow-up with appeal rights and a countdown. Technical errors never become eligibility denials.</div>
+    </div>
+  </div>
+
+  <!-- Step 14 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">14</span> The closer &mdash; switch to Kansas <span class="step-time">30 sec</span> <span class="tag tag-p1">#1</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Change the state selector to Kansas. Work Engagement and Community Engagement disappear from the navigation.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Most tools treat work requirements as one rule with a state field attached. Watch what happens when I switch to Kansas &mdash; the work-requirement screens are gone, because Kansas is an exemption state. Nobody configured that; the rule profile did it.</div>
+      <div class="diff-block"><div class="diff-lbl">&#9658; Differentiator &mdash; closing frame</div><div class="diff-txt">Everything you have raised falls into two groups. Some of it is coverage &mdash; who is enrolled, who is lapsing, who needs a renewal. Plenty of tools work on that. The rest is the new regulatory layer &mdash; work requirements, medical frailty, evidence sufficiency, authority to submit, and proof the state received what you sent. That layer is what this platform was built for.</div></div>
+    </div>
+  </div>
+
+  <!-- Step 15 -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-hdr-title"><span class="step-num">15</span> Honest edges <span class="step-time">15 sec</span> <span class="tag tag-p1">#9</span> <span class="tag tag-p1">#10</span></div></div>
+    <div class="card-body">
+      <div class="do-block"><div class="do-lbl">DO</div>Do not navigate. Say these two lines and move on.</div>
+      <div class="say-block"><div class="say-lbl">SAY</div>Two things we don&rsquo;t claim today. The patient intake wizard holds state between sessions, but the automated follow-up loop is not yet wired. And the patient-facing experience sits in the engagement overlay &mdash; it is not part of this build. Allie raised twenty-one problems and this platform demonstrably answers nineteen. Saying so plainly is a stronger position than implying twenty-one and being caught on one.</div>
+    </div>
+  </div>
+
+  <!-- 21-row index table -->
+  <div class="card" style="margin-top:10px;">
+    <div class="card-hdr"><div class="card-hdr-title">Pain point index &mdash; 21 items, by number</div></div>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:11.5px;">
+        <thead><tr style="background:#FFF9F0;"><th style="padding:8px 12px;text-align:left;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;width:35px;">#</th><th style="padding:8px 12px;text-align:left;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">Pain point</th><th style="padding:8px 12px;text-align:left;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">What CoverageGuard does</th><th style="padding:8px 12px;text-align:left;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;width:60px;">Step</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">1</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Ambiguity</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Effective-dated versioned rule profiles, citations on screen</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">1, 14</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">2</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Frailty</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">42 CFR 440.315 two-element test, clinician review queue</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">2</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">3</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Attribution</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Classified reason with confidence, 17 conflict types</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">7</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">4</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Fragmentation</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">One case record across all three modules</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">9</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">5</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Capacity</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Exception routing, not case-by-case review</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">6</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">6</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Inattention</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Deadline-triggered outreach with response captured</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">5</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">7</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Churn</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Evidence gathered before the deadline</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">3</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">8</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Proof</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Monthly activity ledger, 5 pathways, verification per line</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">4</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">9</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Abandonment</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-style:italic;">Partial &mdash; intake holds state, follow-up not wired</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">15</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">10</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Friction</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-style:italic;">Out of scope &mdash; engagement overlay, not this build</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">15</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">11</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Documentation</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Evidence by state and pathway, consent under 42 CFR 435.923</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">3</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">12</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Quality</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Per-document quality review, named defect blocks submission</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">11</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">13</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Burden</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Pre-screening, exception-only clinician queue</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">2</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">14</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Visibility</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Single population view with source health</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">7</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">15</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Latency</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Checked before the visit, not reconciled after</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">8</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">16</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Outreach</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Language per patient, filterable, template labels</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">5</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">17</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Coordination</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Explicit ownership, role-based views</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">6</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">18</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Authority</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Consent + authority validated before submission, revocation enforced</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">10</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">19</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Submission</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">11-stage pipeline, profile through receipt</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">12</td></tr>
+          <tr><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;font-weight:700;color:#8B6914;">20</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">Closure</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">6 canonical outcomes, each with its own queue</td><td style="padding:6px 12px;border-bottom:1px solid #E0D4C0;">13</td></tr>
+          <tr><td style="padding:6px 12px;font-weight:700;color:#8B6914;">21</td><td style="padding:6px 12px;">Revenue</td><td style="padding:6px 12px;">Exposure quantified per patient and in aggregate</td><td style="padding:6px 12px;">8</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="margin-top:8px;font-size:11px;color:#8B6914;font-style:italic;">
+    Platform URL: <a href="https://coverageguard-multistate-demo-shell.vercel.app" target="_blank" style="color:#8B6914;">coverageguard-multistate-demo-shell.vercel.app</a> &middot; NY / MD / OK states &middot; Kansas excluded (exemption state)
+  </div>
+</div>
+
 </div><!-- /main -->
 </div><!-- /shell -->
 
